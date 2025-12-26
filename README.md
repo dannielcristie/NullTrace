@@ -6,7 +6,8 @@ O **NullTrace** permite que você defina uma lista de domínios que **nunca** de
 
 ## 🚀 Funcionalidades
 
-- **Bloqueio Inteligente:** Ao bloquear `x.com`, a extensão usa Regex para cobrir automaticamente `www.x.com`, `api.x.com`, etc.
+- **Bloqueio Inteligente e Abrangente:** Ao bloquear `x.com`, a extensão utiliza uma lógica robusta de Regex para cobrir automaticamente `x.com`, `www.x.com`, `api.x.com`, e subdomínios complexos como `sub.dominio.x.com`, garantindo eficácia mesmo em domínios com múltiplas terminações (ex: `.com.br`).
+- **Interface Conveniente:** Gerencie seus domínios bloqueados diretamente em um **popup** acessível pelo ícone da extensão na barra do navegador, além da página de opções tradicional.
 - **Privacidade Local:** Todos os dados ficam salvos apenas no navegador.
 - **Dark Mode:** Interface moderna e amigável.
 
