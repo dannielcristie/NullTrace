@@ -20,3 +20,7 @@ O **NullTrace** permite que você defina uma lista de domínios que **nunca** de
 
 ---
 Desenvolvido por **Danniel Cristie**.
+
+## 📸 Capturas de Tela
+
+![Popup da Extensão](image.png)
