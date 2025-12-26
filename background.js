@@ -1,14 +1,16 @@
 let regras = [];
 
 /**
- * Converte "x.com" -> regex segura
- * Resultado: /(^|\\.)x\\.com$/i
+ * Converte "x.com.br" -> regex segura para pegar o domínio e subdomínios.
+ * Resultado: /^x\\.com\\.br$|.*\\.x\\.com\\.br$/i
  */
 function dominioParaRegex(dominio) {
-  const escaped = dominio.replace(/\./g, "\\.");
-  // ^|\.  -> Começa com isso OU tem um ponto antes (pega subdomínios)
-  // $     -> Termina aqui
-  return new RegExp(`(^|\\.)${escaped}$`, "i");
+  // Escapa todos os caracteres especiais de regex para segurança.
+  const escaped = dominio.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  
+  // A regex gerada garante que o hostname seja EXATAMENTE o domínio
+  // ou termine com ".<domínio>", cobrindo todos os subdomínios.
+  return new RegExp(`^${escaped}$|.*\\.${escaped}$`, "i");
 }
 
 // 1. Carregar regras salvas ao iniciar
