@@ -75,3 +75,53 @@ li {
   color: #f87171;
   background: rgba(255, 255, 255, 0.05);
 }
+
+.rule-text {
+  flex: 1;
+  word-break: break-all;
+  padding-right: 10px;
+}
+
+li .edit-input {
+  flex: 1;
+  padding: 8px;
+  background: #334155;
+  color: #fff;
+  border: 1px solid #38bdf8;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 10px;
+}
+
+/* Cores e estilos para os botões de ação na lista */
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.actions button {
+  background: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 1;
+}
+.actions button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Botão de Salvar/Editar: azul */
+.actions button:first-child {
+  color: #38bdf8;
+}
+.actions button:first-child:hover {
+  color: #7dd3fc;
+}
+
+/* Botão de Cancelar/Deletar: vermelho */
+.actions button:last-child {
+  color: #ef4444;
+}
+.actions button:last-child:hover {
+  color: #f87171;
+}
