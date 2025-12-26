@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "NullTrace",
+  "version": "1.0",
+  "description": "Impede que domínios específicos sejam salvos no histórico do navegador.",
+  "permissions": [
+    "history",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
