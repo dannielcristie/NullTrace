@@ -5,7 +5,8 @@
   "description": "Impede que domínios específicos sejam salvos no histórico do navegador.",
   "permissions": [
     "history",
-    "storage"
+    "storage",
+    "alarms"
   ],
   "background": {
     "service_worker": "background.js"
